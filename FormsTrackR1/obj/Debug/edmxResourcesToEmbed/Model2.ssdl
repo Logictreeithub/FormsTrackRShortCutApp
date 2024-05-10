@@ -1,0 +1,961 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FormsTrackRProdModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="__EFMigrationsHistory">
+    <Key>
+      <PropertyRef Name="MigrationId" />
+    </Key>
+    <Property Name="MigrationId" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="ProductVersion" Type="nvarchar" MaxLength="32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AspNetRoleClaims">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RoleId" Type="nvarchar" MaxLength="450" Nullable="false" />
+    <Property Name="ClaimType" Type="nvarchar(max)" />
+    <Property Name="ClaimValue" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="AspNetRoles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="nvarchar" MaxLength="450" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="256" />
+    <Property Name="NormalizedName" Type="nvarchar" MaxLength="256" />
+    <Property Name="ConcurrencyStamp" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="AspNetUserClaims">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="nvarchar" MaxLength="450" Nullable="false" />
+    <Property Name="ClaimType" Type="nvarchar(max)" />
+    <Property Name="ClaimValue" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="AspNetUserLogins">
+    <Key>
+      <PropertyRef Name="LoginProvider" />
+      <PropertyRef Name="ProviderKey" />
+    </Key>
+    <Property Name="LoginProvider" Type="nvarchar" MaxLength="450" Nullable="false" />
+    <Property Name="ProviderKey" Type="nvarchar" MaxLength="450" Nullable="false" />
+    <Property Name="ProviderDisplayName" Type="nvarchar(max)" />
+    <Property Name="UserId" Type="nvarchar" MaxLength="450" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AspNetUserRoles">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Name="UserId" Type="nvarchar" MaxLength="450" Nullable="false" />
+    <Property Name="RoleId" Type="nvarchar" MaxLength="450" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AspNetUsers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="nvarchar" MaxLength="450" Nullable="false" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="FirstName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="LastName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="IsSuperUser" Type="bit" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="ModifiedDate" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="SuperUserId" Type="int" Nullable="false" />
+    <Property Name="RoleId" Type="int" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="256" />
+    <Property Name="NormalizedUserName" Type="nvarchar" MaxLength="256" />
+    <Property Name="Email" Type="nvarchar" MaxLength="256" />
+    <Property Name="NormalizedEmail" Type="nvarchar" MaxLength="256" />
+    <Property Name="EmailConfirmed" Type="bit" Nullable="false" />
+    <Property Name="PasswordHash" Type="nvarchar(max)" />
+    <Property Name="SecurityStamp" Type="nvarchar(max)" />
+    <Property Name="ConcurrencyStamp" Type="nvarchar(max)" />
+    <Property Name="PhoneNumber" Type="nvarchar(max)" />
+    <Property Name="PhoneNumberConfirmed" Type="bit" Nullable="false" />
+    <Property Name="TwoFactorEnabled" Type="bit" Nullable="false" />
+    <Property Name="LockoutEnd" Type="datetimeoffset" Precision="7" />
+    <Property Name="LockoutEnabled" Type="bit" Nullable="false" />
+    <Property Name="AccessFailedCount" Type="int" Nullable="false" />
+    <Property Name="CreatedBy" Type="int" Nullable="false" />
+    <Property Name="ModifiedBy" Type="int" Nullable="false" />
+    <Property Name="UserPassword" Type="nvarchar" MaxLength="100" />
+    <Property Name="DashBoardSettings" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="AspNetUserTokens">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="LoginProvider" />
+      <PropertyRef Name="Name" />
+    </Key>
+    <Property Name="UserId" Type="nvarchar" MaxLength="450" Nullable="false" />
+    <Property Name="LoginProvider" Type="nvarchar" MaxLength="450" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="450" Nullable="false" />
+    <Property Name="Value" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="TblAccountDetails">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="AccountName" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="Description" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="Address" Type="varchar" MaxLength="500" />
+    <Property Name="Address1" Type="varchar" MaxLength="500" />
+    <Property Name="City" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="State" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="Country" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="ZipCode" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="Logo" Type="varchar(max)" />
+    <Property Name="Phone" Type="varchar" MaxLength="250" />
+    <Property Name="TimeZone" Type="int" Nullable="false" />
+    <Property Name="FormDraftTime" Type="int" Nullable="false" />
+    <Property Name="SubscriptionId" Type="int" Nullable="false" />
+    <Property Name="RenewalDate" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="SubscriptionPeriod" Type="int" Nullable="false" />
+    <Property Name="SubscriptionJson" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="SubscriptionUsageJson" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="SalesPersonId" Type="int" Nullable="false" />
+    <Property Name="CreatedBy" Type="int" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="ModifiedBy" Type="int" Nullable="false" />
+    <Property Name="ModifiedOn" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="DashBoardSettings" Type="nvarchar(max)" />
+    <Property Name="DisplayOrderType" Type="int" />
+    <Property Name="RenewalAmount" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="IsFirstLogin" Type="bit" Nullable="false" />
+    <Property Name="CountryCode" Type="nvarchar" MaxLength="5" Nullable="false" />
+    <Property Name="DisplayOrderTypeQr" Type="int" />
+    <Property Name="IsTestAccount" Type="bit" Nullable="false" />
+    <Property Name="DisplayOrderTypeForms" Type="int" Nullable="false" />
+    <Property Name="LastSubscriptionDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TblApplicationTimeZones">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DisplayName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="DisplayValue" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="WebHours" Type="int" Nullable="false" />
+    <Property Name="WebMins" Type="int" Nullable="false" />
+    <Property Name="AppHours" Type="int" Nullable="false" />
+    <Property Name="AppMins" Type="int" Nullable="false" />
+    <Property Name="Country" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="TimeZoneId" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TblAppNames">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="255" />
+    <Property Name="HubName" Type="varchar" MaxLength="255" />
+    <Property Name="HubAccessKey" Type="varchar" MaxLength="255" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="CreatedOn" Type="datetime2" Precision="7" />
+    <Property Name="ModifiedOn" Type="datetime2" Precision="7" />
+  </EntityType>
+  <EntityType Name="TblAzureNHPushRegistration">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AccountId" Type="int" Nullable="false" />
+    <Property Name="AzurePushSlot_Number" Type="int" Nullable="false" />
+    <Property Name="Device_Registrations" Type="int" Nullable="false" />
+    <Property Name="App_Id" Type="int" Nullable="false" />
+    <Property Name="CreatedBy" Type="int" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="ModifiedBy" Type="int" Nullable="false" />
+    <Property Name="ModifiedOn" Type="datetime2" Precision="7" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TblBlockedSenders">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="AccountId" Type="int" Nullable="false" />
+    <Property Name="Device_ID" Type="nvarchar(max)" />
+    <Property Name="Subject" Type="nvarchar(max)" />
+    <Property Name="Message" Type="nvarchar(max)" />
+    <Property Name="DateTimeSent" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="IsActive" Type="int" Nullable="false" />
+    <Property Name="CreatedBy" Type="int" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="ModifiedBy" Type="int" Nullable="false" />
+    <Property Name="ModifiedOn" Type="datetime2" Precision="7" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TblButtonResponses">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AccountId" Type="int" Nullable="false" />
+    <Property Name="QRCodeId" Type="int" Nullable="false" />
+    <Property Name="BDID" Type="int" />
+    <Property Name="Message" Type="nvarchar(max)" />
+    <Property Name="ImagePath" Type="nvarchar(max)" />
+    <Property Name="ContactName" Type="nvarchar(max)" />
+    <Property Name="ContactEmail" Type="nvarchar(max)" />
+    <Property Name="ContactPhoneNumber" Type="nvarchar(max)" />
+    <Property Name="DeviceGPSDetails" Type="nvarchar(max)" />
+    <Property Name="CurrentLocation" Type="nvarchar(max)" />
+    <Property Name="AddressLine1" Type="nvarchar(max)" />
+    <Property Name="AddressLine2" Type="nvarchar(max)" />
+    <Property Name="City" Type="nvarchar(max)" />
+    <Property Name="State" Type="nvarchar(max)" />
+    <Property Name="Country" Type="nvarchar(max)" />
+    <Property Name="ZipCode" Type="int" />
+    <Property Name="CategoryId" Type="int" />
+    <Property Name="UserModuleId" Type="int" />
+    <Property Name="ProximityDistance" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="ProximityStatus" Type="nvarchar(max)" />
+    <Property Name="Notes" Type="nvarchar(max)" />
+    <Property Name="IsQRCodeScan" Type="bit" Nullable="false" />
+    <Property Name="IsApproximateDistance" Type="bit" Nullable="false" />
+    <Property Name="IsRead" Type="bit" Nullable="false" />
+    <Property Name="IsArchive" Type="bit" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedBy" Type="int" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="ModifiedBy" Type="int" Nullable="false" />
+    <Property Name="ModifiedOn" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="IsPredefined" Type="bit" Nullable="false" />
+    <Property Name="DeviceType" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="TblCardsBillingInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CardNumber" Type="varchar" MaxLength="250" />
+    <Property Name="NameOnCard" Type="varchar" MaxLength="250" />
+    <Property Name="ExpiryMonth" Type="varchar" MaxLength="100" />
+    <Property Name="ExpiryYear" Type="varchar" MaxLength="100" />
+    <Property Name="CardType" Type="varchar" MaxLength="100" />
+    <Property Name="IsDefault" Type="bit" />
+    <Property Name="FirstName" Type="varchar" MaxLength="250" />
+    <Property Name="LastName" Type="varchar" MaxLength="250" />
+    <Property Name="Email" Type="varchar" MaxLength="250" />
+    <Property Name="Address" Type="varchar" MaxLength="500" />
+    <Property Name="Address1" Type="varchar" MaxLength="500" />
+    <Property Name="City" Type="varchar" MaxLength="250" />
+    <Property Name="State" Type="varchar" MaxLength="250" />
+    <Property Name="ZipCode" Type="varchar" MaxLength="250" />
+    <Property Name="Country" Type="varchar" MaxLength="250" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="AccountId" Type="int" Nullable="false" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="paymentToken" Type="varchar" MaxLength="500" />
+    <Property Name="paymentCustomerID" Type="varchar" MaxLength="500" />
+    <Property Name="CreatedBy" Type="int" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="ModifiedBy" Type="int" Nullable="false" />
+    <Property Name="ModifiedOn" Type="datetime2" Precision="7" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TblCategories">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Description" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="UserModuleId" Type="int" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="IsSystemCategory" Type="bit" Nullable="false" />
+    <Property Name="AccountId" Type="int" Nullable="false" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="CreatedBy" Type="int" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="ModifiedBy" Type="int" Nullable="false" />
+    <Property Name="ModifiedOn" Type="datetime2" Precision="7" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TblContactGroups">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="GroupName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="GroupDescription" Type="nvarchar(max)" />
+    <Property Name="AccountId" Type="int" Nullable="false" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="ContactsCount" Type="int" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="IsSystemGroup" Type="bit" Nullable="false" />
+    <Property Name="CreatedBy" Type="int" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="ModifiedBy" Type="int" Nullable="false" />
+    <Property Name="ModifiedOn" Type="datetime2" Precision="7" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TblContacts">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirstName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="LastName" Type="nvarchar(max)" />
+    <Property Name="Email" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CompanyName" Type="nvarchar(max)" />
+    <Property Name="Address" Type="nvarchar(max)" />
+    <Property Name="City" Type="nvarchar(max)" />
+    <Property Name="State" Type="nvarchar(max)" />
+    <Property Name="ZipCode" Type="nvarchar(max)" />
+    <Property Name="MobileNumber" Type="nvarchar(max)" />
+    <Property Name="GroupName" Type="nvarchar(max)" />
+    <Property Name="ContactGroupId" Type="int" Nullable="false" />
+    <Property Name="Source" Type="nvarchar(max)" />
+    <Property Name="AccountId" Type="int" Nullable="false" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="IsEmailEnabled" Type="bit" Nullable="false" />
+    <Property Name="IsSMSEnabled" Type="bit" Nullable="false" />
+    <Property Name="CreatedBy" Type="int" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="ModifiedBy" Type="int" Nullable="false" />
+    <Property Name="ModifiedOn" Type="datetime2" Precision="7" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'FormsTrackRProd.dbo.TblCustomerDeskNotes' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="TblCustomerDeskNotes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="int" />
+    <Property Name="Notes" Type="varchar(max)" />
+    <Property Name="NotesBy" Type="varchar" MaxLength="255" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="CreatedOn" Type="datetime2" Precision="7" />
+    <Property Name="ModifiedBy" Type="int" />
+    <Property Name="ModifiedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TblDiscounts">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="varchar" MaxLength="250" />
+    <Property Name="Description" Type="varchar" MaxLength="500" />
+    <Property Name="Percent" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="UsageCount" Type="int" />
+    <Property Name="IsDiscountValidForRenewal" Type="int" />
+    <Property Name="ValidThru" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="ApprovedBy" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="ApprovalNotes" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedBy" Type="int" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="ModifiedBy" Type="int" Nullable="false" />
+    <Property Name="ModifiedOn" Type="datetime2" Precision="7" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TblEmailTemplates">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Tag" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Subject" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="MessageBody" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedBy" Type="int" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="ModifiedBy" Type="int" Nullable="false" />
+    <Property Name="ModifiedOn" Type="datetime2" Precision="7" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TblFormResponseReports">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="FormIds" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="QRButtonIds" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CategoryIds" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="IncludedColumns" Type="nvarchar(max)" />
+    <Property Name="LinkedQRReports" Type="nvarchar(max)" />
+    <Property Name="NotificationObj" Type="nvarchar(max)" />
+    <Property Name="CustomizeReportFormatObj" Type="nvarchar(max)" />
+    <Property Name="IsFavorite" Type="bit" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="CreatedBy" Type="int" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="ModifiedBy" Type="int" Nullable="false" />
+    <Property Name="ModifiedOn" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="BusinessRulesObj" Type="nvarchar(max)" />
+    <Property Name="FormulasObj" Type="nvarchar(max)" />
+    <Property Name="IfElseObj" Type="nvarchar(max)" />
+    <Property Name="ScheduleReportObj" Type="nvarchar(max)" />
+    <Property Name="AccountId" Type="int" Nullable="false" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="DisplayHeaderType" Type="nvarchar(max)" />
+    <Property Name="isReportPreview" Type="bit" Nullable="false" />
+    <Property Name="OrderNumber" Type="int" />
+    <Property Name="isReportQueue" Type="int" />
+    <Property Name="RandomNumber" Type="int" />
+    <Property Name="ReportPreviewCustomFields" Type="nvarchar(max)" />
+    <Property Name="ErrorCount" Type="int" />
+    <Property Name="NextRunDate" Type="varchar" MaxLength="500" />
+    <Property Name="LastRunDate" Type="datetime" />
+    <Property Name="ModuleId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TblFormResponses">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ReferenceId" Type="int" />
+    <Property Name="QRCodeId" Type="int" Nullable="false" />
+    <Property Name="FormId" Type="int" Nullable="false" />
+    <Property Name="AccountId" Type="int" Nullable="false" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="QRCodeTitle" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="FormTitle" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="DeviceType" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="OSType" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="CategoryName" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="CustomFields" Type="nvarchar(max)" />
+    <Property Name="AssociateIdsWithAccess" Type="nvarchar(max)" />
+    <Property Name="Notes" Type="nvarchar(max)" />
+    <Property Name="BDID" Type="nvarchar(max)" />
+    <Property Name="Reminder" Type="nvarchar(max)" />
+    <Property Name="ReminderParentResponseID" Type="int" />
+    <Property Name="IsRead" Type="bit" Nullable="false" />
+    <Property Name="IsBlocked" Type="bit" Nullable="false" />
+    <Property Name="IsArchived" Type="bit" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="IsPublic" Type="bit" Nullable="false" />
+    <Property Name="CreatedBy" Type="int" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="ModifiedBy" Type="int" Nullable="false" />
+    <Property Name="ModifiedOn" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="FormResponseJson" Type="nvarchar(max)" />
+    <Property Name="StatusJson" Type="nvarchar(max)" />
+    <Property Name="AssignedUserId" Type="int" />
+    <Property Name="Status" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="AppVersion" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="TblForms">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AccountId" Type="int" Nullable="false" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="Title" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="Description" Type="text" />
+    <Property Name="Keywords" Type="nvarchar(max)" />
+    <Property Name="FormControllersJson" Type="nvarchar(max)" />
+    <Property Name="FormElementsJson" Type="nvarchar(max)" />
+    <Property Name="CategoryId" Type="int" Nullable="false" />
+    <Property Name="SubmissionCount" Type="int" Nullable="false" />
+    <Property Name="UsageModulesJson" Type="nvarchar(max)" />
+    <Property Name="IsDraftEnabled" Type="int" Nullable="false" />
+    <Property Name="IsSubmissionAllowedByAll" Type="int" Nullable="false" />
+    <Property Name="IsReminderEnabled" Type="int" Nullable="false" />
+    <Property Name="IsActive" Type="int" Nullable="false" />
+    <Property Name="IsTemplate" Type="int" Nullable="false" />
+    <Property Name="TemplateCategory" Type="varchar" MaxLength="250" />
+    <Property Name="FormElementsJsonGroup" Type="nvarchar(max)" />
+    <Property Name="CreatedBy" Type="int" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="ModifiedBy" Type="int" Nullable="false" />
+    <Property Name="ModifiedOn" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="MaxElement" Type="nvarchar(max)" />
+    <Property Name="FormPagesCount" Type="int" Nullable="false" />
+    <Property Name="OrderNumber" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TblFormTransactions">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FormPage" Type="int" Nullable="false" />
+    <Property Name="TransactionId" Type="int" Nullable="false" />
+    <Property Name="QRCodeId" Type="int" Nullable="false" />
+    <Property Name="AccountId" Type="int" Nullable="false" />
+    <Property Name="UserModuleId" Type="int" Nullable="false" />
+    <Property Name="ReferenceId" Type="int" Nullable="false" />
+    <Property Name="ResponseId" Type="int" Nullable="false" />
+    <Property Name="FormId" Type="int" Nullable="false" />
+    <Property Name="CreatedBy" Type="int" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="ModifiedBy" Type="int" Nullable="false" />
+    <Property Name="ModifiedOn" Type="datetime2" Precision="7" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TblHelpData">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Title" Type="varchar" MaxLength="255" />
+    <Property Name="IndexNumber" Type="int" />
+    <Property Name="ParentId" Type="int" />
+    <Property Name="PdfUrl" Type="nvarchar(max)" />
+    <Property Name="KeyWords" Type="varchar" MaxLength="255" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedBy" Type="int" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="ModifiedBy" Type="int" Nullable="false" />
+    <Property Name="ModifiedOn" Type="datetime2" Precision="7" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TblLabelTemplates">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="varchar" MaxLength="250" />
+    <Property Name="DesignObject" Type="varchar(max)" />
+    <Property Name="AccountId" Type="int" />
+    <Property Name="ModuleId" Type="int" />
+    <Property Name="Height" Type="nvarchar(max)" />
+    <Property Name="Width" Type="nvarchar(max)" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="CreatedOn" Type="datetime2" Precision="7" />
+    <Property Name="ModifiedBy" Type="int" />
+    <Property Name="ModifiedOn" Type="datetime2" Precision="7" />
+    <Property Name="IsRotate" Type="bit" Nullable="false" />
+    <Property Name="TemplateDesignObject" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CategoryId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TblLoginTracking">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AccountId" Type="int" Nullable="false" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="IPAddress" Type="nvarchar(max)" />
+    <Property Name="DeviceInfo" Type="nvarchar(max)" />
+    <Property Name="DeviceVersion" Type="nvarchar(max)" />
+    <Property Name="LoginSource" Type="nvarchar(max)" />
+    <Property Name="LoginDateTime" Type="datetime2" Precision="7" />
+    <Property Name="LogoutDateTime" Type="datetime2" Precision="7" />
+    <Property Name="LoggedInFor" Type="nvarchar(max)" />
+    <Property Name="CreatedBy" Type="int" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="ModifiedBy" Type="int" Nullable="false" />
+    <Property Name="ModifiedOn" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'FormsTrackRProd.dbo.TblMasterPermissions' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="TblMasterPermissions">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="PermissionTitle" />
+      <PropertyRef Name="PermissionType" />
+      <PropertyRef Name="isActive" />
+      <PropertyRef Name="DisplayOrder" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PermissionTitle" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="PermissionType" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="isActive" Type="bit" Nullable="false" />
+    <Property Name="PermissionSubType" Type="varchar" MaxLength="250" />
+    <Property Name="DisplayOrder" Type="int" Nullable="false" />
+    <Property Name="FormsTrackRId" Type="varchar" MaxLength="250" />
+    <Property Name="ToolTip" Type="varchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="TblNoticeHistories">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Notes" Type="nvarchar(max)" />
+    <Property Name="SendTo" Type="nvarchar(max)" />
+    <Property Name="CreatedDate" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="HistoryId" Type="int" Nullable="false" />
+    <Property Name="ButtonType" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="NoticeStatusData" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CreatedUser" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TblNotifications">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NotificationType" Type="nvarchar(max)" />
+    <Property Name="NotificationText" Type="nvarchar(max)" />
+    <Property Name="Source" Type="nvarchar(max)" />
+    <Property Name="SentDate" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="AccountId" Type="int" Nullable="false" />
+    <Property Name="Status" Type="int" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="Contacts" Type="nvarchar(max)" />
+    <Property Name="SentDeviceIds" Type="nvarchar(max)" />
+    <Property Name="Devices" Type="nvarchar(max)" />
+    <Property Name="CreatedBy" Type="int" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="ModifiedBy" Type="int" Nullable="false" />
+    <Property Name="ModifiedOn" Type="datetime2" Precision="7" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TblOrderDetails">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AccountId" Type="int" Nullable="false" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="SubscriptionId" Type="int" Nullable="false" />
+    <Property Name="TotalAmount" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="DiscountId" Type="int" Nullable="false" />
+    <Property Name="DiscountAmount" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="BillableAmount" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="OrderJson" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedBy" Type="int" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="ModifiedBy" Type="int" Nullable="false" />
+    <Property Name="ModifiedOn" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="InvoiceFileName" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="TblPermissions">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MappingId" Type="int" />
+    <Property Name="AdminPermissions" Type="nvarchar(max)" />
+    <Property Name="AppPermissions" Type="nvarchar(max)" />
+    <Property Name="QrButtonPermissions" Type="nvarchar(max)" />
+    <Property Name="FormResponsePermissions" Type="nvarchar(max)" />
+    <Property Name="FormNotificationsPermissions" Type="nvarchar(max)" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="CreatedOn" Type="datetime2" Precision="7" />
+    <Property Name="ModifiedBy" Type="int" />
+    <Property Name="ModifiedOn" Type="datetime2" Precision="7" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="AccountId" Type="int" Nullable="false" />
+    <Property Name="MappingType" Type="int" Nullable="false" />
+    <Property Name="ModulePermissions" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="TblPrintQRCodes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AccountId" Type="int" />
+    <Property Name="ModuleId" Type="int" />
+    <Property Name="BlockHtml" Type="varchar(max)" />
+    <Property Name="ImageFileName" Type="varchar" MaxLength="255" />
+    <Property Name="BlockHeight" Type="nvarchar(max)" />
+    <Property Name="BlockWidth" Type="nvarchar(max)" />
+    <Property Name="ZipFileNumber" Type="int" />
+    <Property Name="UserId" Type="int" />
+    <Property Name="QRCodeId" Type="int" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="IsCompleted" Type="bit" />
+    <Property Name="CreatedBy" Type="int" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="ModifiedBy" Type="int" Nullable="false" />
+    <Property Name="ModifiedOn" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="ButtonName" Type="varchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="TblQRCodeButtonReports">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="FormIds" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="QRButtonIds" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CategoryIds" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="IncludedColumns" Type="nvarchar(max)" />
+    <Property Name="LinkedQRReports" Type="nvarchar(max)" />
+    <Property Name="NotificationObj" Type="nvarchar(max)" />
+    <Property Name="CustomizeReportFormatObj" Type="nvarchar(max)" />
+    <Property Name="IsFavorite" Type="bit" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="CreatedBy" Type="int" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="ModifiedBy" Type="int" Nullable="false" />
+    <Property Name="ModifiedOn" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="BusinessRulesObj" Type="nvarchar(max)" />
+    <Property Name="FormulasObj" Type="nvarchar(max)" />
+    <Property Name="IfElseObj" Type="nvarchar(max)" />
+    <Property Name="ScheduleReportObj" Type="nvarchar(max)" />
+    <Property Name="AccountId" Type="int" Nullable="false" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="DisplayHeaderType" Type="nvarchar(max)" />
+    <Property Name="isReportPreview" Type="bit" Nullable="false" />
+    <Property Name="OrderNumber" Type="int" />
+    <Property Name="isReportQueue" Type="int" />
+    <Property Name="RandomNumber" Type="int" />
+    <Property Name="ReportPreviewCustomFields" Type="nvarchar(max)" />
+    <Property Name="ErrorCount" Type="int" />
+    <Property Name="NextRunDate" Type="varchar" MaxLength="500" />
+    <Property Name="LastRunDate" Type="datetime" />
+    <Property Name="ReportType" Type="int" />
+    <Property Name="ModuleId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TblQRCodes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Type" Type="int" Nullable="false" />
+    <Property Name="ModuleId" Type="int" Nullable="false" />
+    <Property Name="OrderNumber" Type="int" Nullable="false" />
+    <Property Name="QRCodePath" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CategoryId" Type="int" Nullable="false" />
+    <Property Name="IsTemplate" Type="bit" Nullable="false" />
+    <Property Name="DaysSinceLastScan" Type="int" Nullable="false" />
+    <Property Name="ShareLink" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="AccountId" Type="int" Nullable="false" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="LastScannedDate" Type="datetime2" Precision="7" />
+    <Property Name="ScannedCount" Type="int" Nullable="false" />
+    <Property Name="CreatedBy" Type="int" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="ModifiedBy" Type="int" Nullable="false" />
+    <Property Name="ModifiedOn" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="ArchivalPrefsJson" Type="nvarchar(max)" />
+    <Property Name="BasicConfigJson" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CustomFieldsJson" Type="nvarchar(max)" />
+    <Property Name="DataCaptureJson" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="HubConnectPrefsJson" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="LinkedReportsJson" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="NotificationPrefsJson" Type="nvarchar(max)" />
+    <Property Name="Base64Image" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="TblQRFormsMapping">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="QRCodeId" Type="int" Nullable="false" />
+    <Property Name="FormId" Type="int" Nullable="false" />
+    <Property Name="IsPublic" Type="bit" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="AccountId" Type="int" Nullable="false" />
+    <Property Name="CreatedBy" Type="int" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="ModifiedBy" Type="int" Nullable="false" />
+    <Property Name="ModifiedOn" Type="datetime2" Precision="7" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TblQueueNotifications">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="AccountId" Type="int" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="Type" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="QueueObjectName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="FileName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Path" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="IsCompleted" Type="int" Nullable="false" />
+    <Property Name="IsNotificationShown" Type="bit" Nullable="false" />
+    <Property Name="CreatedBy" Type="int" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="ModifiedBy" Type="int" Nullable="false" />
+    <Property Name="ModifiedOn" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="RandomNumber" Type="int" />
+  </EntityType>
+  <EntityType Name="TblReplyMessageHistory">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="HistoryId" Type="int" Nullable="false" />
+    <Property Name="Notes" Type="nvarchar(max)" />
+    <Property Name="ReplyEmailIds" Type="nvarchar(max)" />
+    <Property Name="NotesBy" Type="nvarchar(max)" />
+    <Property Name="ButtonType" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="IsSender" Type="bit" Nullable="false" />
+    <Property Name="DeviceType" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CreatedBy" Type="int" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="ModifiedBy" Type="int" Nullable="false" />
+    <Property Name="ModifiedOn" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="Status" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TblSMSSentHistory">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AccountId" Type="int" />
+    <Property Name="QRCodeId" Type="int" />
+    <Property Name="SentDate" Type="datetime" />
+    <Property Name="SentStatus" Type="nvarchar(max)" />
+    <Property Name="MobileNumber" Type="varchar" MaxLength="20" />
+    <Property Name="MessageText" Type="varchar(max)" />
+    <Property Name="ContactId" Type="int" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="ModifiedBy" Type="int" />
+    <Property Name="ModifiedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TblSubscriptions">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="Amount" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="FreeMonths" Type="int" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedBy" Type="int" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="ModifiedBy" Type="int" Nullable="false" />
+    <Property Name="ModifiedOn" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="SubscriptionObject" Type="nvarchar(max)" />
+    <Property Name="IsSubscription" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TblUserCustomSettings">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AccountId" Type="int" Nullable="false" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="UserModuleId" Type="int" />
+    <Property Name="PageType" Type="nvarchar(max)" />
+    <Property Name="CreatedBy" Type="int" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="ModifiedBy" Type="int" Nullable="false" />
+    <Property Name="ModifiedOn" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="JsonData" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TblUserModules">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AccountId" Type="int" Nullable="false" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="DisplayName" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="OrderDetailId" Type="int" Nullable="false" />
+    <Property Name="ExpiryDate" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="IsVisible" Type="bit" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedBy" Type="int" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="ModifiedBy" Type="int" Nullable="false" />
+    <Property Name="ModifiedOn" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="ModuleJson" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="DisplayOrderType" Type="int" />
+  </EntityType>
+  <EntityType Name="TblUserRoles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="varchar" MaxLength="100" />
+    <Property Name="Description" Type="varchar" MaxLength="500" />
+    <Property Name="AccountId" Type="int" Nullable="false" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="IsBuilt_in" Type="int" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedBy" Type="int" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="ModifiedBy" Type="int" Nullable="false" />
+    <Property Name="ModifiedOn" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="UserAppPermissionsJson" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="UserPermissionsJson" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TblUsersDeviceInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AccountId" Type="int" Nullable="false" />
+    <Property Name="PushTokenId" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Device_Type" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="UniqueDeviceId" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="LastAccessed_Date" Type="datetime2" Precision="7" />
+    <Property Name="UserId" Type="int" />
+    <Property Name="MuteStartTime" Type="datetime2" Precision="7" />
+    <Property Name="MuteEndTime" Type="datetime2" Precision="7" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedBy" Type="int" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="ModifiedBy" Type="int" Nullable="false" />
+    <Property Name="ModifiedOn" Type="datetime2" Precision="7" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="FormsTrackRProdModelStoreContainer">
+    <EntitySet Name="__EFMigrationsHistory" EntityType="Self.__EFMigrationsHistory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AspNetRoleClaims" EntityType="Self.AspNetRoleClaims" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AspNetRoles" EntityType="Self.AspNetRoles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AspNetUserClaims" EntityType="Self.AspNetUserClaims" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AspNetUserLogins" EntityType="Self.AspNetUserLogins" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AspNetUserRoles" EntityType="Self.AspNetUserRoles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AspNetUsers" EntityType="Self.AspNetUsers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AspNetUserTokens" EntityType="Self.AspNetUserTokens" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblAccountDetails" EntityType="Self.TblAccountDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblApplicationTimeZones" EntityType="Self.TblApplicationTimeZones" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblAppNames" EntityType="Self.TblAppNames" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblAzureNHPushRegistration" EntityType="Self.TblAzureNHPushRegistration" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblBlockedSenders" EntityType="Self.TblBlockedSenders" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblButtonResponses" EntityType="Self.TblButtonResponses" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblCardsBillingInfo" EntityType="Self.TblCardsBillingInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblCategories" EntityType="Self.TblCategories" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblContactGroups" EntityType="Self.TblContactGroups" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblContacts" EntityType="Self.TblContacts" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblDiscounts" EntityType="Self.TblDiscounts" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblEmailTemplates" EntityType="Self.TblEmailTemplates" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblFormResponseReports" EntityType="Self.TblFormResponseReports" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblFormResponses" EntityType="Self.TblFormResponses" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblForms" EntityType="Self.TblForms" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblFormTransactions" EntityType="Self.TblFormTransactions" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblHelpData" EntityType="Self.TblHelpData" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblLabelTemplates" EntityType="Self.TblLabelTemplates" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblLoginTracking" EntityType="Self.TblLoginTracking" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblNoticeHistories" EntityType="Self.TblNoticeHistories" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblNotifications" EntityType="Self.TblNotifications" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblOrderDetails" EntityType="Self.TblOrderDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblPermissions" EntityType="Self.TblPermissions" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblPrintQRCodes" EntityType="Self.TblPrintQRCodes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblQRCodeButtonReports" EntityType="Self.TblQRCodeButtonReports" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblQRCodes" EntityType="Self.TblQRCodes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblQRFormsMapping" EntityType="Self.TblQRFormsMapping" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblQueueNotifications" EntityType="Self.TblQueueNotifications" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblReplyMessageHistory" EntityType="Self.TblReplyMessageHistory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblSMSSentHistory" EntityType="Self.TblSMSSentHistory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblSubscriptions" EntityType="Self.TblSubscriptions" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblUserCustomSettings" EntityType="Self.TblUserCustomSettings" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblUserModules" EntityType="Self.TblUserModules" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblUserRoles" EntityType="Self.TblUserRoles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblUsersDeviceInfo" EntityType="Self.TblUsersDeviceInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblCustomerDeskNotes" EntityType="Self.TblCustomerDeskNotes" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [TblCustomerDeskNotes].[Id] AS [Id], 
+    [TblCustomerDeskNotes].[UserId] AS [UserId], 
+    [TblCustomerDeskNotes].[Notes] AS [Notes], 
+    [TblCustomerDeskNotes].[NotesBy] AS [NotesBy], 
+    [TblCustomerDeskNotes].[IsActive] AS [IsActive], 
+    [TblCustomerDeskNotes].[CreatedBy] AS [CreatedBy], 
+    [TblCustomerDeskNotes].[CreatedOn] AS [CreatedOn], 
+    [TblCustomerDeskNotes].[ModifiedBy] AS [ModifiedBy], 
+    [TblCustomerDeskNotes].[ModifiedOn] AS [ModifiedOn]
+    FROM [dbo].[TblCustomerDeskNotes] AS [TblCustomerDeskNotes]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="TblMasterPermissions" EntityType="Self.TblMasterPermissions" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [TblMasterPermissions].[Id] AS [Id], 
+    [TblMasterPermissions].[PermissionTitle] AS [PermissionTitle], 
+    [TblMasterPermissions].[PermissionType] AS [PermissionType], 
+    [TblMasterPermissions].[isActive] AS [isActive], 
+    [TblMasterPermissions].[PermissionSubType] AS [PermissionSubType], 
+    [TblMasterPermissions].[DisplayOrder] AS [DisplayOrder], 
+    [TblMasterPermissions].[FormsTrackRId] AS [FormsTrackRId], 
+    [TblMasterPermissions].[ToolTip] AS [ToolTip]
+    FROM [dbo].[TblMasterPermissions] AS [TblMasterPermissions]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

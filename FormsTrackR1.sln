@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormsTrackR1", "FormsTrackR1\FormsTrackR1.csproj", "{296AC91D-118F-4ACA-90BC-543126515F46}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Forms", "Forms\Forms.vdproj", "{3B4748E1-C5BB-4B71-8100-484DA713711A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{296AC91D-118F-4ACA-90BC-543126515F46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{296AC91D-118F-4ACA-90BC-543126515F46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{296AC91D-118F-4ACA-90BC-543126515F46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{296AC91D-118F-4ACA-90BC-543126515F46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B4748E1-C5BB-4B71-8100-484DA713711A}.Debug|Any CPU.ActiveCfg = Debug
+		{3B4748E1-C5BB-4B71-8100-484DA713711A}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {31AF1624-7884-4457-913D-4EA3A18A4EFC}
+	EndGlobalSection
+EndGlobal

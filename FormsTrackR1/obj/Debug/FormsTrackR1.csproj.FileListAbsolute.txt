@@ -1,0 +1,138 @@
+D:\FormsTrackR1\FormsTrackR1\bin\Debug\FormsTrackR1.exe.config
+D:\FormsTrackR1\FormsTrackR1\bin\Debug\FormsTrackR1.exe
+D:\FormsTrackR1\FormsTrackR1\bin\Debug\FormsTrackR1.pdb
+D:\FormsTrackR1\FormsTrackR1\bin\Debug\EntityFramework.dll
+D:\FormsTrackR1\FormsTrackR1\bin\Debug\EntityFramework.SqlServer.dll
+D:\FormsTrackR1\FormsTrackR1\bin\Debug\EntityFramework.xml
+D:\FormsTrackR1\FormsTrackR1\bin\Debug\EntityFramework.SqlServer.xml
+D:\FormsTrackR1\FormsTrackR1\obj\Debug\FormsTrackR1.csproj.AssemblyReference.cache
+D:\FormsTrackR1\FormsTrackR1\obj\Debug\FormsTrackR1.Form1.resources
+D:\FormsTrackR1\FormsTrackR1\obj\Debug\FormsTrackR1.Properties.Resources.resources
+D:\FormsTrackR1\FormsTrackR1\obj\Debug\FormsTrackR1.csproj.GenerateResource.cache
+D:\FormsTrackR1\FormsTrackR1\obj\Debug\FormsTrackR1.csproj.CoreCompileInputs.cache
+D:\FormsTrackR1\FormsTrackR1\obj\Debug\FormsTrackR1.csproj.CopyComplete
+D:\FormsTrackR1\FormsTrackR1\obj\Debug\FormsTrackR1.exe
+D:\FormsTrackR1\FormsTrackR1\obj\Debug\FormsTrackR1.pdb
+C:\Users\saich\Downloads\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\FormsTrackR1.exe.config
+C:\Users\saich\Downloads\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\FormsTrackR1.exe
+C:\Users\saich\Downloads\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\FormsTrackR1.pdb
+C:\Users\saich\Downloads\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\EntityFramework.dll
+C:\Users\saich\Downloads\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\saich\Downloads\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\EntityFramework.xml
+C:\Users\saich\Downloads\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\saich\Downloads\FormsTrackR1\FormsTrackR1\FormsTrackR1\obj\Debug\FormsTrackR1.csproj.AssemblyReference.cache
+C:\Users\saich\Downloads\FormsTrackR1\FormsTrackR1\FormsTrackR1\obj\Debug\FormsTrackR1.Form1.resources
+C:\Users\saich\Downloads\FormsTrackR1\FormsTrackR1\FormsTrackR1\obj\Debug\FormsTrackR1.Properties.Resources.resources
+C:\Users\saich\Downloads\FormsTrackR1\FormsTrackR1\FormsTrackR1\obj\Debug\FormsTrackR1.csproj.GenerateResource.cache
+C:\Users\saich\Downloads\FormsTrackR1\FormsTrackR1\FormsTrackR1\obj\Debug\FormsTrackR1.csproj.CoreCompileInputs.cache
+C:\Users\saich\Downloads\FormsTrackR1\FormsTrackR1\FormsTrackR1\obj\Debug\FormsTrackR1.csproj.CopyComplete
+C:\Users\saich\Downloads\FormsTrackR1\FormsTrackR1\FormsTrackR1\obj\Debug\FormsTrackR1.exe
+C:\Users\saich\Downloads\FormsTrackR1\FormsTrackR1\FormsTrackR1\obj\Debug\FormsTrackR1.pdb
+C:\Users\saich\Downloads\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\FormsTrackR1.exe.manifest
+C:\Users\saich\Downloads\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\FormsTrackR1.application
+C:\Users\saich\Downloads\FormsTrackR1\FormsTrackR1\FormsTrackR1\obj\Debug\FormsTrackR1.exe.manifest
+C:\Users\saich\Downloads\FormsTrackR1\FormsTrackR1\FormsTrackR1\obj\Debug\FormsTrackR1.application
+C:\Users\saina\Downloads\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\obj\Debug\FormsTrackR1.csproj.AssemblyReference.cache
+C:\Users\saina\Downloads\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\obj\Debug\FormsTrackR1.Form1.resources
+C:\Users\saina\Downloads\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\obj\Debug\FormsTrackR1.Properties.Resources.resources
+C:\Users\saina\Downloads\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\obj\Debug\FormsTrackR1.csproj.GenerateResource.cache
+C:\Users\saina\Downloads\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\obj\Debug\FormsTrackR1.csproj.CoreCompileInputs.cache
+C:\Users\saina\Downloads\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\obj\Debug\FormsTrackR1.exe
+C:\Users\saina\Downloads\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\obj\Debug\FormsTrackR1.pdb
+C:\Users\saina\Downloads\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\FormsTrackR1.exe.config
+C:\Users\saina\Downloads\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\FormsTrackR1.exe.manifest
+C:\Users\saina\Downloads\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\FormsTrackR1.application
+C:\Users\saina\Downloads\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\FormsTrackR1.exe
+C:\Users\saina\Downloads\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\FormsTrackR1.pdb
+C:\Users\saina\Downloads\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\BouncyCastle.Cryptography.dll
+C:\Users\saina\Downloads\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\EntityFramework.dll
+C:\Users\saina\Downloads\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\saina\Downloads\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\Google.Protobuf.dll
+C:\Users\saina\Downloads\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\saina\Downloads\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\saina\Downloads\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\saina\Downloads\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\saina\Downloads\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\MySql.Data.dll
+C:\Users\saina\Downloads\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\System.Buffers.dll
+C:\Users\saina\Downloads\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\saina\Downloads\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\saina\Downloads\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\System.IO.Pipelines.dll
+C:\Users\saina\Downloads\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\System.Memory.dll
+C:\Users\saina\Downloads\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\saina\Downloads\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\saina\Downloads\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\saina\Downloads\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\ZstdSharp.dll
+C:\Users\saina\Downloads\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Users\saina\Downloads\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\EntityFramework.xml
+C:\Users\saina\Downloads\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\saina\Downloads\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\Google.Protobuf.pdb
+C:\Users\saina\Downloads\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\Google.Protobuf.xml
+C:\Users\saina\Downloads\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\saina\Downloads\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\saina\Downloads\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\saina\Downloads\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\saina\Downloads\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\MySql.Data.xml
+C:\Users\saina\Downloads\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\System.Buffers.xml
+C:\Users\saina\Downloads\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\saina\Downloads\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\System.IO.Pipelines.xml
+C:\Users\saina\Downloads\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\System.Memory.xml
+C:\Users\saina\Downloads\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\saina\Downloads\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\saina\Downloads\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\saina\Downloads\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\obj\Debug\FormsTrackR1.exe.manifest
+C:\Users\saina\Downloads\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\obj\Debug\FormsTrackR1.application
+C:\Users\saina\Downloads\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\obj\Debug\FormsTrackR1.csproj.CopyComplete
+C:\Users\saina\Downloads\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\Newtonsoft.Json.dll
+C:\Users\saina\Downloads\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\Newtonsoft.Json.xml
+C:\Users\kredd\Downloads\FormsTrackR1 (4)\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\FormsTrackR1.exe.config
+C:\Users\kredd\Downloads\FormsTrackR1 (4)\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\FormsTrackR1.exe.manifest
+C:\Users\kredd\Downloads\FormsTrackR1 (4)\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\FormsTrackR1.application
+C:\Users\kredd\Downloads\FormsTrackR1 (4)\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\FormsTrackR1.exe
+C:\Users\kredd\Downloads\FormsTrackR1 (4)\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\FormsTrackR1.pdb
+C:\Users\kredd\Downloads\FormsTrackR1 (4)\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\BouncyCastle.Cryptography.dll
+C:\Users\kredd\Downloads\FormsTrackR1 (4)\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\EntityFramework.dll
+C:\Users\kredd\Downloads\FormsTrackR1 (4)\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\kredd\Downloads\FormsTrackR1 (4)\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\Google.Protobuf.dll
+C:\Users\kredd\Downloads\FormsTrackR1 (4)\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\kredd\Downloads\FormsTrackR1 (4)\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\kredd\Downloads\FormsTrackR1 (4)\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\kredd\Downloads\FormsTrackR1 (4)\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\kredd\Downloads\FormsTrackR1 (4)\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\MySql.Data.dll
+C:\Users\kredd\Downloads\FormsTrackR1 (4)\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\Newtonsoft.Json.dll
+C:\Users\kredd\Downloads\FormsTrackR1 (4)\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\System.Buffers.dll
+C:\Users\kredd\Downloads\FormsTrackR1 (4)\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\kredd\Downloads\FormsTrackR1 (4)\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\kredd\Downloads\FormsTrackR1 (4)\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\System.IO.Pipelines.dll
+C:\Users\kredd\Downloads\FormsTrackR1 (4)\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\System.Memory.dll
+C:\Users\kredd\Downloads\FormsTrackR1 (4)\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\kredd\Downloads\FormsTrackR1 (4)\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\kredd\Downloads\FormsTrackR1 (4)\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\kredd\Downloads\FormsTrackR1 (4)\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\ZstdSharp.dll
+C:\Users\kredd\Downloads\FormsTrackR1 (4)\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Users\kredd\Downloads\FormsTrackR1 (4)\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\EntityFramework.xml
+C:\Users\kredd\Downloads\FormsTrackR1 (4)\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\kredd\Downloads\FormsTrackR1 (4)\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\Google.Protobuf.pdb
+C:\Users\kredd\Downloads\FormsTrackR1 (4)\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\Google.Protobuf.xml
+C:\Users\kredd\Downloads\FormsTrackR1 (4)\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\kredd\Downloads\FormsTrackR1 (4)\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\kredd\Downloads\FormsTrackR1 (4)\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\kredd\Downloads\FormsTrackR1 (4)\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\kredd\Downloads\FormsTrackR1 (4)\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\MySql.Data.xml
+C:\Users\kredd\Downloads\FormsTrackR1 (4)\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\Newtonsoft.Json.xml
+C:\Users\kredd\Downloads\FormsTrackR1 (4)\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\System.Buffers.xml
+C:\Users\kredd\Downloads\FormsTrackR1 (4)\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\kredd\Downloads\FormsTrackR1 (4)\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\System.IO.Pipelines.xml
+C:\Users\kredd\Downloads\FormsTrackR1 (4)\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\System.Memory.xml
+C:\Users\kredd\Downloads\FormsTrackR1 (4)\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\kredd\Downloads\FormsTrackR1 (4)\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\kredd\Downloads\FormsTrackR1 (4)\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\kredd\Downloads\FormsTrackR1 (4)\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\obj\Debug\FormsTrackR1.csproj.AssemblyReference.cache
+C:\Users\kredd\Downloads\FormsTrackR1 (4)\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\obj\Debug\FormsTrackR1.Form1.resources
+C:\Users\kredd\Downloads\FormsTrackR1 (4)\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\obj\Debug\FormsTrackR1.Properties.Resources.resources
+C:\Users\kredd\Downloads\FormsTrackR1 (4)\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\obj\Debug\FormsTrackR1.csproj.GenerateResource.cache
+C:\Users\kredd\Downloads\FormsTrackR1 (4)\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\obj\Debug\FormsTrackR1.csproj.CoreCompileInputs.cache
+C:\Users\kredd\Downloads\FormsTrackR1 (4)\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\obj\Debug\FormsTrackR1.exe.manifest
+C:\Users\kredd\Downloads\FormsTrackR1 (4)\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\obj\Debug\FormsTrackR1.application
+C:\Users\kredd\Downloads\FormsTrackR1 (4)\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\obj\Debug\FormsTra.64A0DBAA.Up2Date
+C:\Users\kredd\Downloads\FormsTrackR1 (4)\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\obj\Debug\FormsTrackR1.exe
+C:\Users\kredd\Downloads\FormsTrackR1 (4)\FormsTrackR1 (2)\FormsTrackR1\FormsTrackR1\FormsTrackR1\obj\Debug\FormsTrackR1.pdb
